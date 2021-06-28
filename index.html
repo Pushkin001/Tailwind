@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Фокус</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">Акции</a>
+            <a class="mr-5 hover:text-white">Поиск</a>
+            <a class="mr-5 hover:text-white">Управление бронированием</a>
+          </nav>
+          <button class="inline-flex text-white bg-yellow-500 border-0 py-1 px-4 focus:outline-none hover:bg-yellow-600 rounded">Вход
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ШАГ 1</h2>
+                <p class="leading-relaxed">Выбрать дату и время съемки</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ШАГ 2</h2>
+                <p class="leading-relaxed">Выбрать количество участников</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ШАГ 3</h2>
+                <p class="leading-relaxed">Выбрать желаемую локацию для съемки, соответствующую условиям выше</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ШАГ 4</h2>
+                <p class="leading-relaxed">Зарезервировать конкретные зоны на территории выбранной локации</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ШАГ 5</h2>
+                <p class="leading-relaxed">Определить перечень дополнительных услуг</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-yellow-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">ФИНИШ</h2>
+                <p class="leading-relaxed">Оформить заказ</p>
+              </div>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="1.jpg" alt="step">
+                </div>
+                <button class="flex mx-auto mt-6 text-white bg-yellow-500 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-600 rounded">Button</button>
+              </div>
+          </div>
+      </section>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -my-8">
+            <div class="py-8 px-4 lg:w-1/3">
+              <div class="h-full flex items-start">
+                <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                  <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Май</span>
+                  <span class="font-medium text-lg leading-none text-gray-300 title-font">18</span>
+                </div>
+                <div class="flex-grow pl-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-400 mb-1">REVIEWS</h2>
+                  <h1 class="title-font text-xl font-medium text-white mb-3">The 400 Blows</h1>
+                  <p class="leading-relaxed mb-5">Спасибо большое! Локация "Черная жемчужина" просто супер!
+                      Все в бурных эмоциях, фото получились просто огонь!</p>
+                  <a class="inline-flex items-center">
+                    <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-3">
+                      <span class="title-font font-medium text-white">Алина</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-8 px-4 lg:w-1/3">
+              <div class="h-full flex items-start">
+                <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                  <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Июнь</span>
+                  <span class="font-medium text-lg leading-none text-gray-300 title-font">19</span>
+                </div>
+                <div class="flex-grow pl-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-400 mb-1">REVIEWS</h2>
+                  <h1 class="title-font text-xl font-medium text-white mb-3">Shooting Stars</h1>
+                  <p class="leading-relaxed mb-5">Долго думала как отпразновать годовщину свадьбы.
+                      Увидела фото ваших локаций и влюбилась!
+                    Отлично провели время с мужем, сделали кучу фото для инстаграмма и даже распечатали несколько на память)</p>
+                  <a class="inline-flex items-center">
+                    <img alt="blog" src="https://dummyimage.com/102x102" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-3">
+                      <span class="title-font font-medium text-white">Марина</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-8 px-4 lg:w-1/3">
+              <div class="h-full flex items-start">
+                <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                  <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Июнь</span>
+                  <span class="font-medium text-lg leading-none text-gray-300 title-font">20</span>
+                </div>
+                <div class="flex-grow pl-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-400 mb-1">REVIEWS</h2>
+                  <h1 class="title-font text-xl font-medium text-white mb-3">Neptune</h1>
+                  <p class="leading-relaxed mb-5">Всё очень понравилось. 
+                    Воспользовались с девочками услугами вашего фотографа Ильи, теперь фотаемся только у него!
+                    </p>
+                  <a class="inline-flex items-center">
+                    <img alt="blog" src="https://dummyimage.com/101x101" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-3">
+                      <span class="title-font font-medium text-white">Алена и Ко</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-8 px-4 lg:w-1/3">
+                <div class="h-full flex items-start">
+                  <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                    <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Июль</span>
+                    <span class="font-medium text-lg leading-none text-gray-300 title-font">21</span>
+                  </div>
+                  <div class="flex-grow pl-6">
+                    <h2 class="tracking-widest text-xs title-font font-medium text-yellow-400 mb-1">REVIEWS</h2>
+                    <h1 class="title-font text-xl font-medium text-white mb-3">Neptune</h1>
+                    <p class="leading-relaxed mb-5">
+                        Уже не первый раз устраиваю себе праздник, организуя фотосессию в ваших локациях. Не дорого, а эмоций на весь день.
+                      </p>
+                    <a class="inline-flex items-center">
+                      <img alt="blog" src="https://dummyimage.com/101x101" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                      <span class="flex-grow flex flex-col pl-3">
+                        <span class="title-font font-medium text-white">Наталия</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Наши Акции</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">...</p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-yellow-400 mb-5 flex-shrink-0">
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="promotion1.jpg" alt="step">
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">Скидка до 60%. За заказ зоны (до 5 человек) в локации «Черная жемчужина»
+
+                    Body:
+                    Устали от городского шума, хотите провести фотосессию за городом в живописной локации? Заказывайте место в локации «Черная жемчужина». 
+                    Здесь вас ждет настоящая пиратская шхуна с настоящими пиратами! Фото будут просто огонь!
+                    
+                    Заказ от 3 до 5 человек:
+                    — Скидка 40% на аренду при заказе в будний день
+                    
+                    Заказ от 3 до 5 человек + услуги фотографа:
+                    — Скидка 55% на аренду при заказе в будний день
+                    
+                    
+                    Купон действует в будние дни при наличии свободных мест
+                    </p>
+                <a class="mt-3 text-yellow-400 inline-flex items-center">Смотреть
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-yellow-400 mb-5 flex-shrink-0">
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="promotion2.jpg" alt="step">
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">Скидка до 51% при заказе услуг фотографа и использовании реквизита локации. Уютное место для организации детской фото-видео съемки «Поляна сказок»
+
+                    Body:
+                    Локация «Поляна сказок» расположена в живописной загородной местности на берегу чистого озера. Есть места для организации фотосъемок как на открытом воздухе, так и под навесом с профессиональным оборудованием и реквизитом.
+                    
+                    Купон действует на следующие виды услуг:
+                    
+                    — Скидка 51% для аренды зоны в локации «Поляна сказок» при условии заказа услуг фотографа
+                    
+                    Преимущества заказа именно этой локации:
+                    — безопасность (территория локации является частной и охраняется);
+                    — мало людей (площадь — 200 кв. м);
+                    — защита от насекомых (территория кемпинга обработана от клещей);
+                    — обустроенный тематический лагерь, в котором можно сфотографироваться с любимыми персонажами сказок
+                    
+                    Обязательна предварительная запись по телефону</p>
+                <a class="mt-3 text-yellow-400 inline-flex items-center">Смотреть
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-yellow-400 mb-5 flex-shrink-0">
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="promotion3.jpg" alt="step">
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">Скидка до 25%. Закажи праздник "Под ключ"
+
+                    Body:
+                    При выборе локации для 5 человек и больше, а также при заказе всех дополнительных услуг можно очень неплохо сэкономить!
+                    
+                    
+                    Купон действует на следующие виды услуг:
+                    
+                    — Скидка 25% для органицации комплексного праздника для группы от 10 человек.
+                    — Скидка 10% для органицации комплексного праздника для группы от 5 человек.
+                    
+                    Обязательна предварительная запись по телефону.
+                    </p>
+                <a class="mt-3 text-yellow-400 inline-flex items-center">Смотреть
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Контакты</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Оставьте свой отзыв.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-400">Имя</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-yellow-500 focus:bg-gray-900 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-yellow-500 focus:bg-gray-900 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-400">Сообщение</label>
+                  <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-yellow-500 focus:bg-gray-900 focus:ring-2 focus:ring-yellow-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Отправить</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                <a class="text-yellow-400">kadermetov.shoma@mail.ru</a>
+                <p class="leading-normal my-5">Мира 10
+                  <br>Phone: 8 (800) 333-30-30
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
